@@ -1,0 +1,49 @@
+.top_nav {
+  height: 2vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search_nav {
+  height: 4vw;
+  background-color: white;
+  color: grey;
+  display: flex;
+}
+
+.left_items_search_nav {
+  justify-content: space-around;
+  display: flex;
+  width: 50%;
+}
+
+.right_items_search_nav {
+
+}
+
+.ad_nav {
+  height: 2vw;
+  background-color: yellow;
+}
+
+.left_items {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+}
+
+.right_items {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.obj_nav {
+  padding-top: 5px;
+}
+
+.obj_search_nav {
+  padding-top: 20px;
+}
