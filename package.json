@@ -1,0 +1,23 @@
+{
+  "name": "project6_building_with_responsive_design",
+  "version": "1.0.0",
+  "description": "6th project of the Microverse HTML",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoshdezcam/Building-with-Responsive-Design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcoshdezcam/Building-with-Responsive-Design/issues"
+  },
+  "homepage": "https://github.com/marcoshdezcam/Building-with-Responsive-Design#readme",
+  "devDependencies": {
+    "stylelint": "^13.2.1",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
