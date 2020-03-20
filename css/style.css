@@ -81,3 +81,28 @@
   width: 80%;
   justify-content: space-between; */
 }
+
+.latest_news {
+  display: flex;
+}
+
+.latest_news_container {
+  height: 50vw;
+  background-color: purple;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.latest_news_obj {
+  justify-content: space-between;
+}
+
+.latest_news_img {
+  width: 21vw;
+  height: auto;
+}
+
+.latest_funding_rounds {
+  display: flex;
+}
