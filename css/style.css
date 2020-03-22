@@ -48,7 +48,7 @@
 }
 
 .articles_container {
-  width: 100vw;
+  width: 100%;
   height: 552px;
   display: grid;
   grid-template-columns: 65% 34%;
@@ -99,13 +99,11 @@
 }
 
 .latest_news_container {
-  height: 50vw;
+  height: 768px;
   background-color: purple;
-  width: 100vw;
+  width: 100%;
   display: flex;
   max-width: 100%;
-
-  /* justify-content: space-between; */
   flex-wrap: wrap;
   padding: 5% 5%;
 }
@@ -136,4 +134,24 @@
 
 .latest_funding_round {
   width: 25%;
+}
+
+.lists_container {
+  height: 2300px;
+  background-color: orange;
+}
+
+.latest_deals {
+  height: 768px;
+  background-color: green;
+}
+
+footer {
+  height: 255px;
+  background-color: black;
+}
+
+.grey_container {
+  height: 150px;
+  background-color: grey;
 }
