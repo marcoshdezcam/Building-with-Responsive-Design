@@ -19,8 +19,8 @@
   width: 50%;
 }
 
-.right_items_search_nav {
-}
+/* .right_items_search_nav {
+} */
 
 .ad_nav {
   height: 2vw;
@@ -85,8 +85,8 @@
   grid-row: 2 / span 1;
 }
 
-.article_info {
-}
+/* .article_info {
+} */
 
 .latest_news {
   display: flex;
@@ -94,6 +94,8 @@
 
 .latest_deals {
   display: flex;
+  height: 968px;
+  background-color: green;
 }
 
 .latest_news_container {
@@ -160,11 +162,6 @@
   background-color: orange;
 }
 
-.latest_deals {
-  height: 968px;
-  background-color: green;
-}
-
 footer {
   height: 355px;
   background-color: blue;
@@ -177,7 +174,7 @@ footer {
   background-color: grey;
 }
 
-.black_container {
+.legal_footer {
   height: 205px;
   background-color: black;
 }
