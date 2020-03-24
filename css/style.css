@@ -170,6 +170,70 @@ footer {
 .footer_links {
   height: 160.5px;
   background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer_links ul {
+  display: flex;
+  margin: 20px auto;
+}
+
+#social_links {
+
+}
+
+#social_links li {
+  background: #333;
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#social_links li:hover {
+  border: 3px solid #333;
+  background: #131313;
+}
+
+#social_links #facebook {
+  background-image: transparent url(/img/icons-sprite.svg) no-repeat;
+  background-size: contain;
+  background-position: 0% 0%;
+}
+
+#social_links #twitter {
+
+}
+
+#social_links #youtube {
+
+}
+
+#social_links #instagram {
+
+}
+
+#social_links #pinterest {
+
+}
+
+#social_links #rss {
+
+}
+
+#social_links #email {
+
+}
+
+#extra_links {
+
+}
+
+#extra_links li {
+  padding: 0 10px;
 }
 
 .footer_legal {
@@ -187,6 +251,10 @@ footer {
 
 .footer_legal span {
   padding: 0 5px;
+}
+
+.footer_legal span b {
+  color: red;
 }
 
 #stackpath_footer_icon {
