@@ -163,18 +163,32 @@
 }
 
 footer {
-  height: 355px;
-  background-color: blue;
   display: flex;
   flex-flow: column wrap;
 }
 
-.grey_container {
-  height: 150px;
-  background-color: grey;
+.footer_links {
+  height: 160.5px;
+  background-color: #131313;
 }
 
-.legal_footer {
-  height: 205px;
-  background-color: black;
+.footer_legal {
+  height: 97.5px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tnw_footer_icon {
+  height: 10px;
+}
+
+.footer_legal span {
+  padding: 0 5px;
+}
+
+#stackpath_footer_icon {
+  height: 10px;
 }
