@@ -58,7 +58,7 @@
 #bigger_article {
   background:
     linear-gradient(to top, black 0%, #60606063 20%, #60606000 30%),
-    url(/img/main_article_1.png);
+    url(../img/main_article_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 1 / span 1;
@@ -68,7 +68,7 @@
 #small_article1 {
   background:
     linear-gradient(to top, black 0%, #60606063 20%, #60606000 30%),
-    url(/img/main_article_2.jpg);
+    url(../img/main_article_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 2 / span 1;
@@ -78,7 +78,7 @@
 #small_article2 {
   background:
     linear-gradient(to top, black 0%, #60606063 20%, #60606000 30%),
-    url(/img/main_article_3.png);
+    url(../img/main_article_3.png);
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 2 / span 1;
@@ -142,7 +142,7 @@
 }
 
 .latest_deals_ribbon {
-  background-image: url(/img/deals-ribbon.svg);
+  background-image: url(../img/deals-ribbon.svg);
   width: 80px;
   height: 80px;
   position: relative;
@@ -156,42 +156,42 @@
 }
 
 #latest_deals1 {
-  background-image: url(/img/latest_deals1.png);
+  background-image: url(../img/latest_deals1.png);
   background-size: contain;
 }
 
 #latest_deals2 {
-  background-image: url(/img/latest_deals2.png);
+  background-image: url(../img/latest_deals2.png);
   background-size: contain;
 }
 
 #latest_deals3 {
-  background-image: url(/img/latest_deals3.png);
+  background-image: url(../img/latest_deals3.png);
   background-size: contain;
 }
 
 #latest_deals4 {
-  background-image: url(/img/latest_deals4.png);
+  background-image: url(../img/latest_deals4.png);
   background-size: contain;
 }
 
 #latest_deals5 {
-  background-image: url(/img/latest_deals5.png);
+  background-image: url(../img/latest_deals5.png);
   background-size: contain;
 }
 
 #latest_deals6 {
-  background-image: url(/img/latest_deals6.png);
+  background-image: url(../img/latest_deals6.png);
   background-size: contain;
 }
 
 #latest_deals7 {
-  background-image: url(/img/latest_deals7.png);
+  background-image: url(../img/latest_deals7.png);
   background-size: contain;
 }
 
 #latest_deals8 {
-  background-image: url(/img/latest_deals8.png);
+  background-image: url(../img/latest_deals8.png);
   background-size: contain;
 }
 
@@ -259,7 +259,7 @@ footer {
 }
 
 #social_links #facebook {
-  background-image: transparent url(/img/icons-sprite.svg) no-repeat;
+  background-image: transparent url(../img/icons-sprite.svg) no-repeat;
   background-size: contain;
   background-position: 0% 0%;
 }
@@ -319,4 +319,14 @@ footer {
 
 #stackpath_footer_icon {
   height: 10px;
+}
+
+.articles_big_container {
+  display: flex;
+
+}
+
+.little_container {
+  width: 130%;
+  flex-wrap: wrap;
 }
