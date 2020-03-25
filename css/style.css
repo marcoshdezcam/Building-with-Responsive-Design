@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth:700&display=swap');
+
 .top_nav {
   height: 2vw;
   background-color: black;
@@ -112,9 +114,9 @@
   display: flex;
   flex-direction: column;
   width: 80vw;
-  height: 50vw;
+  height: 60vw;
   max-width: 1192px;
-  max-height: 600px;
+  max-height: 800px;
   margin: 0 auto;
 }
 
@@ -142,8 +144,8 @@
 }
 
 .latest_deals_container {
-  width: 80vw;
-  height: 50vw;
+  width: 100%;
+  height: 90%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -153,19 +155,40 @@
   width: 25%;
   max-width: 294px;
   height: 50%;
+
+  /* max-height: 298px; */
   padding: 18px;
 }
 
 .latest_deal_img {
   width: 100%;
-  height: 50%;
+  height: 70%;
   max-width: 270px;
   max-height: 201px;
   background-size: contain;
 }
 
+.latest_deal_title {
+  font-family: 'Amaranth', sans-serif;
+  height: 20%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
 .latest_deal_price {
+  height: 10%;
   display: flex;
+}
+
+.latest_deal_article_price {
+  color: #aaa;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.latest_deal_article_discount {
+  font-size: 16px;
 }
 
 .latest_deal_price p {
@@ -173,35 +196,35 @@
 }
 
 #latest_deal1 {
-  background-image: url(../img/latest_deals1.png);
+  background-image: url(../img/latest_deal_1.jpg);
 }
 
 #latest_deal2 {
-  background-image: url(../img/latest_deals2.png);
+  background-image: url(../img/latest_deal_2.jpg);
 }
 
 #latest_deal3 {
-  background-image: url(../img/latest_deals3.png);
+  background-image: url(../img/latest_deal_3.jpg);
 }
 
 #latest_deal4 {
-  background-image: url(../img/latest_deals4.png);
+  background-image: url(../img/latest_deal_4.jpg);
 }
 
 #latest_deal5 {
-  background-image: url(../img/latest_deals5.png);
+  background-image: url(../img/latest_deal_5.jpg);
 }
 
 #latest_deal6 {
-  background-image: url(../img/latest_deals6.png);
+  background-image: url(../img/latest_deal_6.jpg);
 }
 
 #latest_deal7 {
-  background-image: url(../img/latest_deals7.png);
+  background-image: url(../img/latest_deal_7.jpg);
 }
 
 #latest_deal8 {
-  background-image: url(../img/latest_deals8.png);
+  background-image: url(../img/latest_deal_8.jpg);
 }
 
 .latest_news_img {
