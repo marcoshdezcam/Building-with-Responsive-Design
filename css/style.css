@@ -111,80 +111,96 @@
 .latest_deals {
   display: flex;
   flex-direction: column;
+  width: 80vw;
+  height: 50vw;
+  max-width: 1192px;
+  max-height: 600px;
+  margin: 0 auto;
 }
 
 .latest_deals_heading {
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  height: 15%;
-  margin: 0 auto;
+  width: 100%;
+  height: 10%;
+}
+
+.latest_deals_heading a {
+  color: #f42;
+  font-size: 16px;
+  text-decoration: none;
+  margin: auto 0;
+}
+
+.latest_deals_heading a:hover {
+  color: black;
+}
+
+.latest_deals_heading a h3 {
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .latest_deals_container {
-  width: 80%;
-  height: 85%;
-  max-width: 100%;
+  width: 80vw;
+  height: 50vw;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.latest_deals_obj {
+.latest_deal {
   width: 25%;
+  max-width: 294px;
   height: 50%;
-  padding: 12px;
+  padding: 18px;
 }
 
-.latest_deals_img {
-  width: 270px;
-  height: 201px;
+.latest_deal_img {
+  width: 100%;
+  height: 50%;
+  max-width: 270px;
+  max-height: 201px;
   background-size: contain;
 }
 
-.latest_deals_ribbon {
-  background-image: url(../img/deals-ribbon.svg);
-  width: 80px;
-  height: 80px;
-  position: relative;
-  display: inline-block;
-  right: -190px;
-  top: 80px;
+.latest_deal_price {
+  display: flex;
 }
 
-.latest_deals_ribbon p {
-  transform: rotate(45deg);
+.latest_deal_price p {
+  margin: 0 5px;
 }
 
-#latest_deals1 {
+#latest_deal1 {
   background-image: url(../img/latest_deals1.png);
 }
 
-#latest_deals2 {
+#latest_deal2 {
   background-image: url(../img/latest_deals2.png);
 }
 
-#latest_deals3 {
+#latest_deal3 {
   background-image: url(../img/latest_deals3.png);
 }
 
-#latest_deals4 {
+#latest_deal4 {
   background-image: url(../img/latest_deals4.png);
 }
 
-#latest_deals5 {
+#latest_deal5 {
   background-image: url(../img/latest_deals5.png);
 }
 
-#latest_deals6 {
+#latest_deal6 {
   background-image: url(../img/latest_deals6.png);
 }
 
-#latest_deals7 {
+#latest_deal7 {
   background-image: url(../img/latest_deals7.png);
 }
 
-#latest_deals8 {
+#latest_deal8 {
   background-image: url(../img/latest_deals8.png);
 }
 
