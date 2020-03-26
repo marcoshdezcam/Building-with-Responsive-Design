@@ -238,14 +238,16 @@
 
 #articles_categories {
   flex-flow: row wrap;
-  height: 100vw;
+  height: 150vw;
   max-height: 2147px;
 }
 
 .articles_category {
   padding: 12px;
   width: 33.33%;
+  max-width: 392px;
   height: 33.33%;
+  max-height: 685px;
 }
 
 .most_popular {
