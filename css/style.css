@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Amaranth:700&display=swap');
 
+@font-face {
+  font-family: 'Shentox';
+  src:
+    url(../fonts/Shentox.woff2),
+    url(../fonts/Shentox.woff);
+}
+
 .top_nav {
   height: 2vw;
   background-color: black;
@@ -243,7 +250,7 @@
 }
 
 .investment_card_name {
-  background-color: #FF4422;
+  background-color: #f42;
   height: 40px;
   padding-left: 80px;
   display: flex;
@@ -251,21 +258,20 @@
 }
 
 .investment_card_details {
-  background-color: #F4E2DD;
+  background-color: #f4e2dd;
   height: 57px;
   padding-left: 80px;
 }
 
 .investment_card_tags {
-  background-color: #F2F0F3;
+  background-color: #f2f0f3;
   height: 82px;
 }
 
 .investment_card_description {
-  background-color: #F2F0F3;
+  background-color: #f2f0f3;
   height: 68px;
 }
-
 
 #articles_categories {
   flex-flow: row wrap;
@@ -286,6 +292,31 @@
   max-width: 368px;
   height: 40%;
   max-height: 276px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  color: white;
+}
+
+.most_popular_text {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  top: 60%;
+}
+
+.most_popular_text h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.most_popular_text h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.most_popular_text h4 {
+  display: inline;
 }
 
 .latest {
@@ -299,6 +330,25 @@
 .latest_heading {
   width: 60%;
   height: 100%;
+  padding: 2%;
+  font-family: Shentox, sans-serif;
+  color: #f42;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.latest_heading h5 {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.latest_heading h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .latest_img {
