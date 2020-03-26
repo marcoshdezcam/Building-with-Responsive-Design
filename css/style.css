@@ -6,19 +6,19 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
   font-size: 14px;
 }
 
 .search_nav {
   background-color: white;
   display: flex;
-  font-family: Shentox,sans-serif;
+  font-family: Shentox, sans-serif;
   font-weight: 250;
   text-transform: uppercase;
   color: #aaa;
   height: 48px;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   line-height: 1;
 }
 
@@ -33,6 +33,7 @@
   font-size: 14px;
   padding-left: 2px;
   padding-right: 2px;
+  margin: auto 0;
 }
 
 .ad_nav {
@@ -41,7 +42,7 @@
   display: flex;
   align-items: center;
   padding-left: 15px;
-  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
   font-size: 14px;
 }
 
@@ -58,10 +59,6 @@
 }
 
 .obj_nav {
-  margin: auto 0;
-}
-
-.obj_search_nav {
   margin: auto 0;
 }
 
@@ -141,13 +138,13 @@
   font-weight: 700;
 }
 
-#latest_news {
+/* #latest_news {
 
-}
+} */
 
-#latest_news_heading {
+/* #latest_news_heading {
 
-}
+} */
 
 #latest_news_wrapper {
   width: 100%;
@@ -218,30 +215,78 @@
 
 #latest_funding_rounds_wrapper {
   width: 100%;
-  max-width: ;
+
+  /* max-width: ; */
   height: 90%;
-  max-height: ;
+
+  /* max-height: ; */
   display: flex;
 }
 
 .investment_card {
   width: 25%;
-  max-width: ;
+
+  /* max-width: ; */
   height: 90%;
-  max-height: ;
+
+  /* max-height: ; */
 }
 
-#latest_deals {
+/* #latest_deals {
 
-}
+} */
 
 #articles_categories {
   flex-flow: row wrap;
+  height: 100vw;
+  max-height: 2147px;
 }
 
 .articles_category {
+  padding: 12px;
   width: 33.33%;
   height: 33.33%;
+}
+
+.most_popular {
+  width: 100%;
+  max-width: 368px;
+  height: 40%;
+  max-height: 276px;
+}
+
+.latest {
+  width: 100%;
+  max-width: 368px;
+  height: 20%;
+  max-height: 96px;
+  display: flex;
+}
+
+.latest_heading {
+  width: 60%;
+  height: 100%;
+}
+
+.latest_img {
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.other_articles {
+  height: 40%;
+  max-height: 220px;
+}
+
+#apps .most_popular {
+  background-image: url(../img/category_apps_most_popular.jpg);
+}
+
+#apps .latest_img {
+  background-image: url(../img/category_apps_latest.jpg);
 }
 
 .latest_deals_heading {
