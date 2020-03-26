@@ -6,24 +6,43 @@
   color: white;
   display: flex;
   justify-content: space-between;
+  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
 }
 
 .search_nav {
-  height: 4vw;
   background-color: white;
-  color: grey;
   display: flex;
+  font-family: Shentox,sans-serif;
+  font-weight: 250;
+  text-transform: uppercase;
+  color: #aaa;
+  height: 48px;
+  letter-spacing: .02em;
+  line-height: 1;
 }
 
 .left_items_search_nav {
   justify-content: space-around;
   display: flex;
-  width: 50%;
+  width: 60%;
+  padding-left: 3px;
+}
+
+.obj_search_nav {
+  font-size: 14px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .ad_nav {
   height: 2vw;
   background-color: yellow;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-family: ARS Maquette,Helvetica Neue,Arial,sans-serif;
+  font-size: 14px;
 }
 
 .left_items {
@@ -61,7 +80,8 @@
 #bigger_article {
   background:
     linear-gradient(to top, black 0%, #60606063 20%, #60606000 30%),
-    url(../img/main_article_1.png);
+    url(../img/main_article_1.png),
+    url(../img/tnw.svg);
   background-repeat: no-repeat;
   background-size: cover;
   grid-column: 1 / span 1;
