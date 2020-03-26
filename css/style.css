@@ -224,17 +224,48 @@
 }
 
 .investment_card {
+  padding: 12px;
   width: 25%;
-
-  /* max-width: ; */
+  max-width: 294px;
   height: 90%;
-
-  /* max-height: ; */
+  max-height: 291px;
 }
 
-/* #latest_deals {
+.investment_card img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: -10px;
+}
 
-} */
+.investment_card {
+
+}
+
+.investment_card_name {
+  background-color: #FF4422;
+  height: 40px;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.investment_card_details {
+  background-color: #F4E2DD;
+  height: 57px;
+  padding-left: 80px;
+}
+
+.investment_card_tags {
+  background-color: #F2F0F3;
+  height: 82px;
+}
+
+.investment_card_description {
+  background-color: #F2F0F3;
+  height: 68px;
+}
+
 
 #articles_categories {
   flex-flow: row wrap;
