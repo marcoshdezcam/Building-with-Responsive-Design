@@ -289,6 +289,62 @@
   background-image: url(../img/category_apps_latest.jpg);
 }
 
+#gear .most_popular {
+  background-image: url(../img/category_gear_most_popular.png);
+}
+
+#gear .latest_img {
+  background-image: url(../img/category_gear_latest.png);
+}
+
+#tech .most_popular {
+  background-image: url(../img/category_tech_most_popular.png);
+}
+
+#tech .latest_img {
+  background-image: url(../img/category_tech_latest.jpg);
+}
+
+#creative .most_popular {
+  background-image: url(../img/category_creative_most_popular.jpg);
+}
+
+#creative .latest_img {
+  background-image: url(../img/category_creative_latest.png);
+}
+
+#podium .most_popular {
+  background-image: url(../img/category_podium_most_popular.png);
+}
+
+#podium .latest_img {
+  background-image: url(../img/category_podium_latest.jpg);
+}
+
+#insights .most_popular {
+  background-image: url(../img/category_insights_most_popular.jpg);
+}
+
+#insights .latest_img {
+  background-image: url(../img/category_insights_latest.jpeg);
+}
+
+#launch .most_popular {
+  background-image: url(../img/category_launch_most_popular.jpg);
+}
+
+#launch .latest_img {
+  background-image: url(../img/category_launch_latest.png);
+}
+
+#distract .most_popular {
+  background-image: url(../img/category_distract_most_popular.jpg);
+}
+
+#distract .latest_img {
+  background-image: url(../img/category_distract_latest.jpg);
+}
+
 .latest_deals_heading {
   display: flex;
   justify-content: space-between;
