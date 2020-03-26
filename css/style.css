@@ -21,9 +21,6 @@
   width: 50%;
 }
 
-/* .right_items_search_nav {
-} */
-
 .ad_nav {
   height: 2vw;
   background-color: yellow;
@@ -49,12 +46,16 @@
   margin: auto 0;
 }
 
-.articles_container {
+.main_articles_container {
   width: 100%;
   height: 552px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+.main_articles_container h2 {
+  visibility: hidden;
 }
 
 #bigger_article {
@@ -87,37 +88,140 @@
   grid-row: 2 / span 1;
 }
 
-/* .article_info {
-} */
-
-.latest_news {
-  display: flex;
-}
-
-.latest_news_container {
-  height: 768px;
-  background-color: purple;
-  width: 100%;
-  display: flex;
-  max-width: 100%;
-  flex-wrap: wrap;
-  padding: 5% 5%;
-}
-
-.latest_news_obj {
-  width: 19%;
-  justify-content: space-between;
-  margin: 3% 3%;
-}
-
-.latest_deals {
+.sections_container {
+  width: 85vw;
+  max-width: 1151px;
+  height: 50vw;
+  max-height: 666px;
   display: flex;
   flex-direction: column;
-  width: 80vw;
-  height: 60vw;
-  max-width: 1192px;
-  max-height: 800px;
   margin: 0 auto;
+}
+
+.sections_heading {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  font-family: 'Amaranth', sans-serif;
+}
+
+.sections_heading a {
+  color: #f42;
+  font-size: 16px;
+  text-decoration: none;
+  margin: auto 0;
+}
+
+.sections_heading a:hover {
+  color: black;
+}
+
+.sections_heading a h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#latest_news {
+
+}
+
+#latest_news_heading {
+
+}
+
+#latest_news_wrapper {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.latest_article {
+  width: 25%;
+  max-width: 294px;
+  height: 50%;
+  max-height: 251px;
+  padding: 12px;
+}
+
+.latest_article_img {
+  width: 100%;
+  max-width: 270px;
+  height: 60%;
+  max-height: 135px;
+  background-size: cover;
+}
+
+#latest_article1 {
+  background-image: url(../img/latest_news_1.png);
+}
+
+#latest_article2 {
+  background-image: url(../img/latest_news_2.png);
+}
+
+#latest_article3 {
+  background-image: url(../img/latest_news_3.jpg);
+}
+
+#latest_article4 {
+  background-image: url(../img/latest_news_4.jpg);
+}
+
+#latest_article5 {
+  background-image: url(../img/latest_news_5.png);
+}
+
+#latest_article6 {
+  background-image: url(../img/latest_news_6.jpg);
+}
+
+#latest_article7 {
+  background-image: url(../img/latest_news_7.png);
+}
+
+#latest_article8 {
+  background-image: url(../img/latest_news_8.jpeg);
+}
+
+#latest_funding_rounds {
+  height: 25vw;
+}
+
+#latest_funding_rounds_header {
+  justify-content: space-between;
+}
+
+#funding_rounds_extra_links {
+  display: flex;
+}
+
+#latest_funding_rounds_wrapper {
+  width: 100%;
+  max-width: ;
+  height: 90%;
+  max-height: ;
+  display: flex;
+}
+
+.investment_card {
+  width: 25%;
+  max-width: ;
+  height: 90%;
+  max-height: ;
+}
+
+#latest_deals {
+
+}
+
+#articles_categories {
+  flex-flow: row wrap;
+}
+
+.articles_category {
+  width: 33.33%;
+  height: 33.33%;
 }
 
 .latest_deals_heading {
@@ -125,22 +229,6 @@
   justify-content: space-between;
   width: 100%;
   height: 10%;
-}
-
-.latest_deals_heading a {
-  color: #f42;
-  font-size: 16px;
-  text-decoration: none;
-  margin: auto 0;
-}
-
-.latest_deals_heading a:hover {
-  color: black;
-}
-
-.latest_deals_heading a h3 {
-  font-size: 28px;
-  font-weight: 700;
 }
 
 .latest_deals_container {
@@ -155,8 +243,6 @@
   width: 25%;
   max-width: 294px;
   height: 50%;
-
-  /* max-height: 298px; */
   padding: 18px;
 }
 
@@ -165,7 +251,8 @@
   height: 70%;
   max-width: 270px;
   max-height: 201px;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .latest_deal_title {
@@ -188,6 +275,7 @@
 }
 
 .latest_deal_article_discount {
+  color: #555;
   font-size: 16px;
 }
 
@@ -227,36 +315,9 @@
   background-image: url(../img/latest_deal_8.jpg);
 }
 
-.latest_news_img {
-  width: 21vw;
-  height: auto;
-}
-
-.latest_funding_rounds {
-  padding: 5% 5%;
-}
-
-#latests_funds_heading {
-  display: flex;
-  justify-content: space-between;
-}
-
-.latest_funding_rounds_content {
-  display: flex;
-}
-
-.latest_funding_round {
-  width: 25%;
-}
-
-.lists_container {
-  height: 1500px;
-  background-color: orange;
-}
-
 footer {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
 }
 
 .footer_links {
@@ -268,13 +329,9 @@ footer {
   align-content: center;
 }
 
-.footer_links ul {
+.social_links_wrapper {
   display: flex;
   margin: 20px auto;
-}
-
-.social_links_wrapper {
-
 }
 
 .social_links {
@@ -285,18 +342,17 @@ footer {
   border-radius: 50%;
 }
 
-/* .social_links:hover {
+.social_links:hover {
   border: 3px solid #333;
   background: #131313;
-} */
+}
 
 #facebook {
-  background-image: url(../img/latest_deals1.png) no-repeat;
-  height: 20px;
-  width: 20px;
-  background-size: cover;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/latest_deal_1.jpg);
+  background-size: contain;
   background-position: 10px top 10px left;
-  z-index: 1;
 }
 
 #twitter {
@@ -324,7 +380,8 @@ footer {
 }
 
 #extra_links {
-
+  display: flex;
+  margin: 0 auto;
 }
 
 #extra_links li {
