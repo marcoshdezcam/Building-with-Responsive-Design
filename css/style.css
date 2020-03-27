@@ -63,7 +63,7 @@ a {
 
 .search_nav_icon {
   background-image: url(../img/icons-sprite.svg);
-  background-position: -848px -848px;
+  background-position: -832px -832px;
   background-size: hover;
   width: 16px;
   height: 16px;
@@ -596,6 +596,7 @@ footer {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  z-index: 3;
 }
 
 .social_links:hover {
@@ -606,9 +607,11 @@ footer {
 #facebook {
   width: 16px;
   height: 16px;
-  background-image: url(../img/latest_deal_1.jpg);
-  background-size: contain;
-  background-position: 10px top 10px left;
+  background-image:
+    url(../img/icons-sprite.svg);
+  background-position: -272px -272px;
+  z-index: 2;
+
 }
 
 #twitter {
