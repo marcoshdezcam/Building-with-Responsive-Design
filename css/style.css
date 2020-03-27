@@ -68,6 +68,7 @@ a {
   width: 16px;
   height: 16px;
   margin: 16px 16px;
+  cursor: pointer;
 }
 
 .obj_search_nav {
@@ -596,7 +597,7 @@ footer {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  z-index: 3;
+  cursor: pointer;
 }
 
 .social_links:hover {
@@ -604,38 +605,40 @@ footer {
   background: #131313;
 }
 
-#facebook {
+.social_icons {
+  display: inline-block;
   width: 16px;
   height: 16px;
-  background-image:
-    url(../img/icons-sprite.svg);
-  background-position: -272px -272px;
-  z-index: 2;
+  margin: 12px 12px;
+  background-size: 16px 16px;
+}
 
+#facebook {
+  background-image: url(../img/social_facebook.png);
 }
 
 #twitter {
-  background-position: 0% 0%;
+  background-image: url(../img/social_twitter.png);
 }
 
 #youtube {
-  background-position: 0% 0%;
+  background-image: url(../img/social_youtube.png);
 }
 
 #instagram {
-  background-position: 0% 0%;
+  background-image: url(../img/social_instagram.png);
 }
 
 #pinterest {
-  background-position: 0% 0%;
+  background-image: url(../img/social_pinterest.png);
 }
 
 #rss {
-  background-position: 0% 0%;
+  background-image: url(../img/social_rss.png);
 }
 
 #email {
-  background-position: 0% 0%;
+  background-image: url(../img/social_email.png);
 }
 
 #extra_links {
