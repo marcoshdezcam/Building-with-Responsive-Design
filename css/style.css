@@ -7,14 +7,24 @@
     url(../fonts/Shentox.woff);
 }
 
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .top_nav {
   height: 2vw;
   background-color: black;
-  color: white;
+  color: grey;
   display: flex;
   justify-content: space-between;
   font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
   font-size: 14px;
+  padding-left: 10px;
+}
+
+.news_obj {
+  color: white;
 }
 
 .search_nav {
@@ -34,6 +44,19 @@
   display: flex;
   width: 60%;
   padding-left: 3px;
+}
+
+.right_items_search_nav {
+  width: 48px;
+  height: 48px;
+  padding: 1px;
+
+}
+
+.search_nav_icon{
+  background-image:
+    url(../img/icons-sprite.svg);
+  background-position: -848px -848px;
 }
 
 .obj_search_nav {
