@@ -106,7 +106,7 @@ a {
 
 .main_articles_container {
   width: 100%;
-  height: 552px;
+  height: 492px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -134,9 +134,9 @@ a {
 }
 
 .date_container {
-  position: absolute;
-  left: 693px;
-  top: 124px;
+  position: relative;
+  top: 12px;
+  right: -700px;
   color: white;
   font-size: 16px;
   font-family: sans-serif;
@@ -180,8 +180,22 @@ a {
 }
 
 .title_container {
-  background-color: pink;
-  width: 500px;
+  width: 750px;
+  height: auto;
+  position: relative;
+  left: 13px;
+  top: 165px;
+  color: white;
+  font-size: 42px;
+  font-family: Shentox,sans-serif;
+}
+
+.container_data {
+  position: relative;
+  bottom: -100px;
+}
+
+.title_container_small {
   height: auto;
   position: relative;
   left: 13px;
@@ -189,7 +203,6 @@ a {
   color: white;
   font-size: 24px;
   font-family: Shentox,sans-serif;
-  width: 150px;
 }
 
 #small_article1 {
@@ -218,6 +231,14 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+}
+
+.article_info {
+  display: flex;   
+  position: relative;
+  color: white;
+  bottom: -170px;
+  left: 20px;
 }
 
 .sections_heading {
@@ -329,6 +350,7 @@ a {
 }
 
 .investment_card {
+  position: relative;
   padding: 12px;
   width: 25%;
   max-width: 294px;
@@ -341,10 +363,6 @@ a {
   height: 60px;
   position: relative;
   top: -10px;
-}
-
-.investment_card {
-
 }
 
 .investment_card_name {
