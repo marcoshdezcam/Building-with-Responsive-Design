@@ -120,6 +120,28 @@ a {
   margin: 2px;
 }
 
+.tnw_logo {
+  background:
+    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
+    no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 112px;
+  margin: 24px 0 0 24px;
+  position: absolute;
+  left: -12px;
+  z-index: 0;
+}
+
+.date_container {
+  position: absolute;
+  left: 693px;
+  top: 124px;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
 /* .gradient_black {
   background: rgba(0, 0, 0, 0.25) url(../img/image_gradient_black.png) no-repeat;
   background-size: 100% 100%;
@@ -145,6 +167,29 @@ a {
   z-index: 1;
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
+}
+
+.article_category{
+  position: relative;
+  left: 13px;
+  top: 154px;
+  color: white;
+  font-size: 14px;
+  font-family: Shentox,sans-serif;
+  width: 150px;
+}
+
+.title_container {
+  background-color: pink;
+  width: 500px;
+  height: auto;
+  position: relative;
+  left: 13px;
+  top: 165px;
+  color: white;
+  font-size: 24px;
+  font-family: Shentox,sans-serif;
+  width: 150px;
 }
 
 #small_article1 {
@@ -642,6 +687,7 @@ footer {
 }
 
 #extra_links {
+  color: grey;
   display: flex;
   margin: 0 auto;
 }
@@ -665,6 +711,7 @@ footer {
 
 .footer_legal span {
   padding: 0 5px;
+  color: grey;
 }
 
 .footer_legal span b {
