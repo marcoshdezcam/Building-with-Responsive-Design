@@ -326,8 +326,8 @@ main {
 }
 
 .sections_container {
-  width: 85vw;
-  max-width: 1151px;
+  width: 90vw;
+  max-width: 1180px;
   height: 50vw;
   max-height: 666px;
   display: flex;
@@ -573,57 +573,75 @@ main {
 }
 
 .articles_category {
-  padding: 12px;
-  width: 33.33%;
-  max-width: 392px;
-  height: 33.33%;
-  max-height: 685px;
+  padding: 0;
+  width: 392px;
+  height: 685px;
 }
 
 .most_popular {
-  width: 100%;
-  max-width: 368px;
-  height: 40%;
-  max-height: 276px;
+  width: 368px;
+  height: 276px;
   display: flex;
   flex-direction: column;
   align-content: flex-end;
   color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .most_popular_text {
   width: 100%;
-  height: 40%;
-  position: relative;
-  top: 60%;
+  height: 60%;
+  bottom: 0;
+  padding: 14px;
+  position: absolute;
+  z-index: 4;
 }
 
 .most_popular_text h5 {
   font-size: 14px;
   font-weight: 500;
+  margin: 10px 0;
 }
 
 .most_popular_text h3 {
   font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
+  margin: 10px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .most_popular_text h4 {
   display: inline;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.date_published {
+  position: absolute;
+  bottom: 20px;
+  left: 120px;
 }
 
 .latest {
+  background-color: #fff4f2;
   width: 100%;
   max-width: 368px;
   height: 20%;
   max-height: 96px;
   display: flex;
+  justify-content: space-between;
 }
 
 .latest_heading {
   width: 60%;
   height: 100%;
-  padding: 2%;
+  padding: 12px;
   font-family: Shentox, sans-serif;
   color: #f42;
   display: flex;
@@ -655,6 +673,17 @@ main {
 .other_articles {
   height: 40%;
   max-height: 220px;
+  list-style-type: disc;
+  padding-left: 10px;
+}
+
+.other_articles li {
+  margin: 10px 0;
+  line-height: 20px;
+}
+
+.other_articles li::marker {
+  color: #f42;
 }
 
 #apps .most_popular {
