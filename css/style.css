@@ -12,6 +12,23 @@ a {
   text-decoration: none;
 }
 
+header {
+  z-index: 7;
+}
+
+nav {
+  /* position: fixed; */
+
+  /* width: 100vw;
+  z-index: 7; */
+}
+
+main {
+  position: relative;
+
+  /* top: 80px; */
+}
+
 .top_nav {
   height: 32px;
   background-color: black;
@@ -297,7 +314,7 @@ a {
 .article_info_small {
   display: flex;
   position: absolute;
-  width: 90%;
+  width: 150px;
   color: white;
   left: 150px;
   bottom: 10px;
