@@ -475,7 +475,7 @@ main {
   max-height: 291px;
 }
 
-.investment_card img {
+.logo_funding {
   width: 60px;
   height: 60px;
   position: absolute;
@@ -499,9 +499,11 @@ main {
   background-color: #f4e2dd;
   height: 57px;
   padding-left: 90px;
+  text-transform: uppercase;
 }
 
 .company_value {
+  padding-top: 8px;
   font-family: Avalon, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -509,13 +511,49 @@ main {
 
 .investment_card_tags {
   background-color: #f2f0f3;
-  height: 82px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+  padding-top: 18px;
 }
 
+.investment_card_tag1 {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.investment_card_tag2 {
+  display: flex;
+}
+
+.investment_card_img1 {
+  background:
+    url('../img/icon_tag.png');
+  margin-right: 15px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.investment_card_img2 {
+  background:
+    url('../img/icon_maletin.png');
+  margin-right: 15px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+
 .investment_card_description {
+  font-family: Avalon, sans-serif;
+  font-size: 13px;
   background-color: #f2f0f3;
-  height: 68px;
+  height: 75px;
   border-top: 1px solid rgba(255, 68, 34, 0.25);
+  padding-left: 18px;
+  padding-top: 12px;
 }
 
 #articles_categories {
