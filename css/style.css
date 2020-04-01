@@ -511,11 +511,16 @@ main {
 
 .investment_card_tags {
   background-color: #f2f0f3;
+  color: #555;
   height: 75px;
   display: flex;
   flex-direction: column;
   padding-left: 18px;
   padding-top: 18px;
+}
+
+.investment_card_tags_links:hover {
+  color: black;
 }
 
 .investment_card_tag1 {
@@ -528,8 +533,7 @@ main {
 }
 
 .investment_card_img1 {
-  background:
-    url('../img/icon_tag.png');
+  background: url('../img/icon_tag.png');
   margin-right: 15px;
   width: 16px;
   height: 16px;
@@ -537,14 +541,12 @@ main {
 }
 
 .investment_card_img2 {
-  background:
-    url('../img/icon_maletin.png');
+  background: url('../img/icon_maletin.png');
   margin-right: 15px;
   width: 16px;
   height: 16px;
   cursor: pointer;
 }
-
 
 .investment_card_description {
   font-family: Avalon, sans-serif;
@@ -554,6 +556,14 @@ main {
   border-top: 1px solid rgba(255, 68, 34, 0.25);
   padding-left: 18px;
   padding-top: 12px;
+}
+
+.investment_description_link {
+  color: #aaa;
+}
+
+.investment_description_link:hover {
+  color: black;
 }
 
 #articles_categories {
