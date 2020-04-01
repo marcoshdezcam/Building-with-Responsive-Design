@@ -359,13 +359,13 @@ main {
 }
 
 #latest_news {
-  width: 100vw;
+  width: 1170px;
   height: 646px;
   padding: 50px 0;
 }
 
 #latest_news_heading {
-
+  padding-left: 12px;
 }
 
 #latest_news_wrapper {
@@ -384,11 +384,32 @@ main {
 }
 
 .latest_article_img {
-  width: 100%;
-  max-width: 270px;
-  height: 60%;
-  max-height: 135px;
+  width: 270px;
+  height: 135px;
   background-size: cover;
+}
+
+.article_title {
+  font-family: Shentox, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.article_title:hover {
+  color: #f42;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.latest_article_info {
+  display: flex;
+  margin-top: 10px;
+}
+
+.article_author {
+  margin-right: 10px;
 }
 
 #latest_article1 {
@@ -457,12 +478,17 @@ main {
 .investment_card img {
   width: 60px;
   height: 60px;
-  position: relative;
-  top: -10px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
 
 .investment_card_name {
   background-color: #f42;
+  color: white;
+  font-family: Avalon, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
   height: 40px;
   padding-left: 80px;
   display: flex;
@@ -472,7 +498,13 @@ main {
 .investment_card_details {
   background-color: #f4e2dd;
   height: 57px;
-  padding-left: 80px;
+  padding-left: 90px;
+}
+
+.company_value {
+  font-family: Avalon, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .investment_card_tags {
@@ -483,6 +515,7 @@ main {
 .investment_card_description {
   background-color: #f2f0f3;
   height: 68px;
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
 }
 
 #articles_categories {
