@@ -28,31 +28,42 @@ a {
 }
 
 header {
+  width: 100vw;
   position: relative;
   z-index: 7;
 }
 
-nav {
-  /* position: fixed;
-  width: 100vw;
-  z-index: 7; */
-}
-
 main {
   position: relative;
-
-  /* top: 80px; */
 }
 
 #orange_container {
   width: 106px;
-  height: 80px;
-  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  height: 78px;
+  background-image: linear-gradient(to bottom right, #c09, #f42 85%);
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 8;
   visibility: hidden;
+}
+
+#orange_container:hover {
+  background-image: url(../img/home-1.gif);
+  background-position: 50%;
+  background-size: cover;
+}
+
+#logo_mobile_navbar {
+  background:
+    url(../img/tnw.svg)
+    no-repeat;
+  background-size: contain;
+  width: 66px;
+  height: 16px;
+  position: absolute;
+  top: 31px;
+  left: 20px;
 }
 
 .top_nav {
@@ -110,45 +121,66 @@ main {
 }
 
 .search_nav {
+  top: 0;
+  left: 0;
+  width: 100vw;
   background-color: white;
   display: flex;
   justify-content: space-between;
   font-family: Shentox, sans-serif;
   text-transform: uppercase;
   color: #aaa;
-  height: 48px;
+  height: 50px;
   letter-spacing: 0.02em;
   line-height: 1;
 }
 
 .left_items_search_nav {
   display: flex;
+  justify-content: flex-start;
   width: 50%;
   padding-left: 20px;
 }
 
 .right_items_search_nav {
-  width: 48px;
-  height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 50px;
   padding: 1px;
-  border-left: 1px solid #eee;
 }
 
 .search_nav_icon {
   background-image: url(../img/icons-sprite.svg);
   background-position: -832px -832px;
-  background-size: hover;
-  width: 16px;
-  height: 16px;
-  margin: 16px 16px;
+  margin: auto auto;
+
+  /* background-size: cover; */
+  width: 48px;
+  height: 48px;
+  padding: 16px;
   cursor: pointer;
 }
 
+.hamburger_menu {
+  width: 16px;
+  height: 16px;
+  margin: 16px 16px;
+}
+
+.hamburguer_menu span {
+  width: 16px;
+  height: 2px;
+  background-color: #f42;
+}
+
 .obj_search_nav {
+  height: 100%;
   font-size: 14px;
   padding-left: 2px;
   padding-right: 20px;
   margin: auto 0;
+  border-left: 1px solid #eee;
 }
 
 .obj_search_nav a p {
@@ -156,6 +188,7 @@ main {
 }
 
 .ad_nav {
+  width: 100%;
   height: 30px;
   background-color: #fd3;
   display: flex;
@@ -210,7 +243,7 @@ main {
 
 .tnw_logo {
   background:
-    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg)
+    url(../img/tnw.svg)
     no-repeat;
   background-size: contain;
   width: 50%;
@@ -1018,5 +1051,39 @@ footer {
 @media only screen and (max-width: 768px) {
   #orange_container {
     visibility: visible;
+  }
+
+  #orange_container:hover {
+    background-image: url(../img/home-1.gif);
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  .top_nav {
+    visibility: hidden;
+  }
+
+  .search_nav {
+    position: absolute;
+    top: 0;
+  }
+
+  .left_items_search_nav {
+    visibility: hidden;
+  }
+
+  .ad_nav {
+    position: absolute;
+    top: 48px;
+    padding-left: 115px;
+  }
+
+  nav {
+    padding-left: 106px;
+  }
+
+  main {
+    top: 78px;
+    width: 100%;
   }
 }
