@@ -2,10 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
 
 @font-face {
+  font-family: 'ARS_Maquette';
+  src:
+    url(../fonts/ArsMaquetteMedium.woff2),
+    url(../fonts/ArsMaquetteMedium.woff);
+}
+
+@font-face {
   font-family: 'Shentox';
   src:
     url(../fonts/Shentox.woff2),
     url(../fonts/Shentox.woff);
+}
+
+@font-face {
+  font-family: 'Avalon';
+  src:
+    url(../fonts/Avalon.woff2),
+    url(../fonts/Avalon.woff);
 }
 
 a {
@@ -19,9 +33,8 @@ header {
 }
 
 nav {
-  /* position: fixed; */
-
-  /* width: 100vw;
+  /* position: fixed;
+  width: 100vw;
   z-index: 7; */
 }
 
@@ -48,7 +61,7 @@ main {
   color: hsla(0, 0%, 100%, 0.6);
   display: flex;
   justify-content: space-between;
-  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-family: ARS_Maquette, sans-serif;
   font-size: 12px;
   padding: 0 20px;
 }
@@ -67,6 +80,21 @@ main {
 .obj_nav_black {
   margin: auto 0;
   padding-right: 10px;
+}
+
+.latest_deal_price p {
+  margin: 0 5px;
+}
+
+.sections_heading a {
+  color: #f42;
+  font-size: 16px;
+  text-decoration: none;
+  margin: auto 0;
+}
+
+.sections_heading a:hover {
+  color: black;
 }
 
 .top_nav a:hover {
@@ -132,7 +160,7 @@ main {
   background-color: #fd3;
   display: flex;
   align-items: center;
-  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-family: ARS_Maquette, sans-serif;
   font-size: 12px;
   padding-left: 20px;
 }
@@ -194,13 +222,13 @@ main {
 }
 
 .date_container {
+  font-family: ARS_Maquette, sans-serif;
   position: absolute;
   width: 190px;
   top: 20px;
   left: 78%;
   color: white;
   font-size: 14px;
-  font-family: sans-serif;
   z-index: 4;
 }
 
@@ -233,7 +261,7 @@ main {
 }
 
 .article_info {
-  font-family: 'Quicksand', sans-serif;
+  font-family: ARS_Maquette, sans-serif;
   color: white;
   display: flex;
   position: absolute;
@@ -303,7 +331,7 @@ main {
   font-size: 14px;
   font-family: Shentox, sans-serif;
   position: absolute;
-  top: 150px;
+  top: 160px;
   left: 15px;
   z-index: 4;
 }
@@ -340,17 +368,6 @@ main {
   height: 10%;
   display: flex;
   font-family: 'Amaranth', sans-serif;
-}
-
-.sections_heading a {
-  color: #f42;
-  font-size: 16px;
-  text-decoration: none;
-  margin: auto 0;
-}
-
-.sections_heading a:hover {
-  color: black;
 }
 
 .sections_heading a h2 {
@@ -390,7 +407,7 @@ main {
 }
 
 .article_title {
-  font-family: Shentox, sans-serif;
+  font-family: ARS_Maquette, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 20px;
@@ -443,6 +460,7 @@ main {
 
 #latest_funding_rounds {
   height: 25vw;
+  max-height: 350px;
 }
 
 #latest_funding_rounds_header {
@@ -451,15 +469,12 @@ main {
 
 #funding_rounds_extra_links {
   display: flex;
+  font-family: ARS_Maquette, sans-serif;
 }
 
 #latest_funding_rounds_wrapper {
   width: 100%;
-
-  /* max-width: ; */
   height: 90%;
-
-  /* max-height: ; */
   display: flex;
 }
 
@@ -483,9 +498,8 @@ main {
 .investment_card_name {
   background-color: #f42;
   color: white;
-  font-family: Avalon, sans-serif;
+  font-family: 'Amaranth', sans-serif;
   font-size: 18px;
-  font-weight: 800;
   height: 40px;
   padding-left: 80px;
   display: flex;
@@ -506,7 +520,12 @@ main {
   font-weight: 700;
 }
 
+.investment_card_details span {
+  font-family: Shentox, sans-serif;
+}
+
 .investment_card_tags {
+  font-family: ARS_Maquette, sans-serif;
   background-color: #f2f0f3;
   color: #555;
   height: 75px;
@@ -546,8 +565,8 @@ main {
 }
 
 .investment_card_description {
-  font-family: Avalon, sans-serif;
-  font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
   background-color: #f2f0f3;
   height: 75px;
   border-top: 1px solid rgba(255, 68, 34, 0.25);
@@ -589,7 +608,7 @@ main {
 
 .most_popular_text {
   width: 100%;
-  height: 60%;
+  height: 50%;
   bottom: 0;
   padding: 14px;
   position: absolute;
@@ -601,12 +620,14 @@ main {
 }
 
 .most_popular_text h5 {
+  font-family: Shentox, sans-serif;
   font-size: 14px;
   font-weight: 500;
   margin: 10px 0;
 }
 
 .most_popular_text h3 {
+  font-family: ARS_Maquette, sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -628,9 +649,10 @@ main {
 .author_container {
   display: flex;
   flex-direction: row;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.data_author{
+.data_author {
   display: flex;
   width: 50%;
   justify-content: space-between;
@@ -650,7 +672,6 @@ main {
   width: 60%;
   height: 100%;
   padding: 12px;
-  font-family: Shentox, sans-serif;
   color: #f42;
   display: flex;
   flex-direction: column;
@@ -658,6 +679,7 @@ main {
 }
 
 .latest_heading h5 {
+  font-family: Shentox, sans-serif;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -665,6 +687,7 @@ main {
 }
 
 .latest_heading h3 {
+  font-family: ARS_Maquette, sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.25;
@@ -679,6 +702,7 @@ main {
 }
 
 .other_articles {
+  font-family: 'Quicksand', sans-serif;
   height: 40%;
   max-height: 220px;
   list-style-type: disc;
@@ -780,6 +804,10 @@ main {
   height: 10%;
 }
 
+#latest_deals_see_all {
+  font-family: ARS_Maquette, sans-serif;
+}
+
 .latest_deals_container {
   width: 100%;
   height: 90%;
@@ -805,7 +833,7 @@ main {
 }
 
 .latest_deal_title {
-  font-family: 'Amaranth', sans-serif;
+  font-family: ARS_Maquette, sans-serif;
   height: 15%;
   font-size: 16px;
   line-height: 20px;
@@ -817,6 +845,7 @@ main {
 }
 
 .latest_deal_price {
+  font-family: 'Quicksand', sans-serif;
   padding-top: 8px;
   height: 15%;
   display: flex;
@@ -832,10 +861,6 @@ main {
 .latest_deal_article_discount {
   color: #555;
   font-size: 19px;
-}
-
-.latest_deal_price p {
-  margin: 0 5px;
 }
 
 #latest_deal1 {
@@ -876,6 +901,8 @@ footer {
 }
 
 .footer_links {
+  font-family: Shentox, sans-serif;
+  font-size: 15px;
   height: 160.5px;
   background-color: #131313;
   display: flex;
@@ -952,6 +979,8 @@ footer {
 }
 
 .footer_legal {
+  font-family: ARS_Maquette, sans-serif;
+  font-size: 15px;
   height: 97.5px;
   background-color: #000;
   color: white;
