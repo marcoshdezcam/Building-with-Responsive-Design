@@ -409,7 +409,6 @@ main {
 }
 
 #latest_news {
-  width: 1170px;
   height: 646px;
   padding: 50px 0;
 }
@@ -420,7 +419,7 @@ main {
 
 #latest_news_wrapper {
   width: 100%;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-flow: row wrap;
 }
@@ -434,8 +433,8 @@ main {
 }
 
 .latest_article_img {
-  width: 270px;
-  height: 135px;
+  width: 100%;
+  height: 60%;
   background-size: cover;
 }
 
@@ -492,8 +491,7 @@ main {
 }
 
 #latest_funding_rounds {
-  height: 25vw;
-  max-height: 350px;
+  height: 350px;
 }
 
 #latest_funding_rounds_header {
@@ -768,6 +766,9 @@ main {
 
 #apps .most_popular {
   background-image: url(../img/category_apps_most_popular.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #apps .latest_img {
@@ -1084,6 +1085,27 @@ footer {
 
   main {
     top: 78px;
+    width: 100%;
+  }
+
+  .articles_categories {
+    width: 100vw;
+  }
+
+  .articles_category {
+    width: 100%;
+  }
+
+  .latest_article {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .latest_article_img {
+    height: 100%;
+  }
+
+  .most_popular {
     width: 100%;
   }
 }
