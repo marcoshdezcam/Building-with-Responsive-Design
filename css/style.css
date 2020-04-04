@@ -138,14 +138,14 @@ main {
 .left_items_search_nav {
   display: flex;
   justify-content: flex-start;
-  width: 50%;
+  width: 80%;
   padding-left: 20px;
 }
 
 .right_items_search_nav {
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: 20%;
   height: 50px;
   padding: 1px;
 }
@@ -180,7 +180,8 @@ main {
   padding-left: 2px;
   padding-right: 20px;
   margin: auto 0;
-  border-left: 1px solid #eee;
+  display: flex;
+  align-items: center;
 }
 
 .obj_search_nav a p {
@@ -259,7 +260,7 @@ main {
   position: absolute;
   width: 190px;
   top: 20px;
-  left: 78%;
+  right: 2%;
   color: white;
   font-size: 14px;
   z-index: 4;
@@ -298,7 +299,7 @@ main {
   color: white;
   display: flex;
   position: absolute;
-  width: 60%;
+  width: 100%;
   bottom: 15px;
   left: 15px;
   z-index: 4;
@@ -1064,6 +1065,7 @@ footer {
   }
 
   .search_nav {
+    display: flex;
     position: absolute;
     top: 0;
   }
