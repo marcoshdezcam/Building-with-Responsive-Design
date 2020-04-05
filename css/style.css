@@ -399,7 +399,6 @@ main {
   width: 90vw;
   max-width: 1180px;
   height: 50vw;
-  max-height: 666px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -424,11 +423,12 @@ main {
 
 #latest_news_heading {
   padding-left: 12px;
+  height: 10%;
 }
 
 #latest_news_wrapper {
   width: 100%;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-flow: row wrap;
 }
@@ -1090,8 +1090,6 @@ footer {
 
   .search_nav_icon {
     position: relative;
-
-    /* right: 50px; */
   }
 
   .hamburguer_border {
@@ -1111,10 +1109,6 @@ footer {
   nav {
     position: fixed;
     padding-left: 106px;
-  }
-
-  #orange_container {
-
   }
 
   main {
@@ -1157,24 +1151,69 @@ footer {
     grid-row: 3 / span 1;
   }
 
-  .articles_categories {
+  .sections_container {
     width: 100vw;
   }
 
-  .articles_category {
-    width: 100%;
+  #latest_news {
+    height: 856px;
+  }
+
+  #latest_news_wrapper {
+    flex-flow: column nowrap;
   }
 
   .latest_article {
     width: 100%;
     max-width: 100%;
+    height: 12.5%;
+    max-height: 88px;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
   }
 
   .latest_article_img {
+    width: 75px;
+    height: 75px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+
+  .article_title {
+    width: 100%;
     height: 100%;
+    margin-top: 0;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .article_author {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .latest_article_info {
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .most_popular {
+    width: 100%;
+  }
+
+  .articles_categories {
+    width: 100vw;
+  }
+
+  .articles_category {
     width: 100%;
   }
 }
