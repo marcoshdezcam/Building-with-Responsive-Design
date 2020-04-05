@@ -34,6 +34,7 @@ header {
 }
 
 main {
+  width: 100vw;
   position: relative;
 }
 
@@ -369,8 +370,10 @@ main {
   color: white;
   font-size: 14px;
   font-family: Shentox, sans-serif;
+  width: 150px;
+  height: 14px;
   position: absolute;
-  top: 160px;
+  bottom: 100px;
   left: 15px;
   z-index: 4;
 }
@@ -388,7 +391,7 @@ main {
   -webkit-box-orient: vertical;
   position: absolute;
   left: 15px;
-  top: 180px;
+  bottom: 40px;
   z-index: 4;
 }
 
@@ -1058,6 +1061,7 @@ footer {
 @media only screen and (max-width: 768px) {
   #orange_container {
     visibility: visible;
+    position: fixed;
   }
 
   #orange_container:hover {
@@ -1099,18 +1103,58 @@ footer {
   }
 
   .ad_nav {
-    position: absolute;
     top: 48px;
     padding-left: 115px;
+    position: fixed;
   }
 
   nav {
+    position: fixed;
     padding-left: 106px;
   }
 
+  #orange_container {
+
+  }
+
   main {
-    top: 78px;
-    width: 100%;
+    top: 80px;
+  }
+
+  .tnw_logo {
+    visibility: hidden;
+  }
+
+  .main_articles_container {
+    height: 90vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 10px;
+  }
+
+  .title_container {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .article_category {
+    bottom: 100px;
+  }
+
+  #bigger_article {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  #small_article1 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  #small_article2 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
   }
 
   .articles_categories {
