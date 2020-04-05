@@ -141,11 +141,17 @@ main {
   justify-content: flex-end;
   width: 20%;
   height: 100%;
+  position: relative;
+}
+
+.search_border {
+  border-left: 1px solid #eee;
 }
 
 .search_nav_icon {
-  background-image: url(../img/icons-sprite.svg);
-  background-position: -832px -832px;
+  background-image: url(../img/search_icon.png);
+  position: absolute;
+  right: 0;
   width: 16px;
   height: 16px;
   margin: 16px;
@@ -155,7 +161,7 @@ main {
 }
 
 .hamburger_menu {
-  /* visibility: hidden; */
+  visibility: hidden;
   width: 16px;
   height: 30px;
   margin: 11px 16px;
@@ -1072,6 +1078,24 @@ footer {
 
   .left_items_search_nav {
     visibility: hidden;
+  }
+
+  .search_border {
+    position: relative;
+  }
+
+  .search_nav_icon {
+    position: relative;
+
+    /* right: 50px; */
+  }
+
+  .hamburguer_border {
+    border-left: 1px solid #eee;
+  }
+
+  .hamburger_menu {
+    visibility: visible;
   }
 
   .ad_nav {
