@@ -4,8 +4,6 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /*
-    -> Add logo with gif to the navigation bar
-    -> LATEST_FUNDING Width on container changes bases on vw
     -> ARTICLE_CATEGORIES Article size changes bases on vw
         -> Increase size of parent container
     -> LATEST_DEALS image changes based on vw
@@ -77,6 +75,25 @@
 
   #latest_investment_card {
     display: none;
+  }
+
+  #articles_categories {
+    height: 3000px;
+    max-height: 3000px;
+  }
+
+  .articles_category {
+    width: 490px;
+  }
+
+  .most_popular {
+    width: 470px;
+    height: 352px;
+  }
+
+  .latest {
+    width: 100%;
+    max-width: 470px;
   }
 }
 
