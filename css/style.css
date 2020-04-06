@@ -624,9 +624,9 @@ main {
 
 #articles_categories {
   width: 100%;
-  flex-flow: row wrap;
-  height: 180vw;
+  height: 2000px;
   max-height: 2147px;
+  flex-flow: row wrap;
 }
 
 .articles_category {
@@ -644,6 +644,9 @@ main {
   color: white;
   position: relative;
   z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .most_popular_text {
@@ -775,9 +778,6 @@ main {
 
 #apps .most_popular {
   background-image: url(../img/category_apps_most_popular.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 
 #apps .latest_img {
@@ -1223,19 +1223,38 @@ footer {
     max-height: 25%;
   }
 
-  /* .investment_card_details {
-    height: 40px;
-  } */
-
-  .most_popular {
-    width: 100%;
-  }
-
-  .articles_categories {
+  #articles_categories {
     width: 100vw;
+    height: 7000px;
+    max-height: 8000px;
   }
 
   .articles_category {
+    margin: 0 auto;
+    width: 95%;
+    height: 863px;
+  }
+
+  .most_popular {
     width: 100%;
+    height: 540px;
+  }
+
+  .most_popular_text {
+    height: 20%;
+  }
+
+  .latest {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .latest_heading {
+    width: 80%;
+  }
+
+  .latest_img {
+    width: 20%;
+    max-width: 96px;
   }
 }
