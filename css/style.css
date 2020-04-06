@@ -69,17 +69,17 @@ main {
   justify-content: space-between;
   font-family: ARS_Maquette, sans-serif;
   font-size: 12px;
-  padding: 0 20px;
+  padding-left: 20px;
 }
 
 .left_items {
   display: flex;
-  width: 40%;
+  width: 70%;
 }
 
 .right_items {
   display: flex;
-  width: 20%;
+  width: 30%;
   justify-content: flex-end;
 }
 
@@ -417,7 +417,9 @@ main {
 }
 
 #latest_news {
-  height: 646px;
+  width: 100vw;
+  height: 660px;
+  max-height: 855px;
   padding: 50px 0;
 }
 
@@ -443,16 +445,21 @@ main {
 
 .latest_article_img {
   width: 100%;
-  height: 60%;
+  height: 70%;
   background-size: cover;
 }
 
 .article_title {
+  height: 20%;
   font-family: ARS_Maquette, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  line-height: 20px;
+  line-height: 22px;
   margin-top: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .article_title:hover {
@@ -462,9 +469,13 @@ main {
 }
 
 .latest_article_info {
+  height: 20%;
   font-family: 'Quicksand', sans-serif;
   display: flex;
-  margin-top: 10px;
+}
+
+.date_published {
+  margin: auto 0;
 }
 
 #latest_article1 {
@@ -856,7 +867,7 @@ main {
   height: 90%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .latest_deal {
@@ -1047,214 +1058,4 @@ footer {
 
 #stackpath_footer_icon {
   height: 10px;
-}
-
-@media only screen and (max-width: 768px) {
-  #orange_container {
-    visibility: visible;
-    position: fixed;
-  }
-
-  #orange_container:hover {
-    background-image: url(../img/home-1.gif);
-    background-position: 50%;
-    background-size: cover;
-  }
-
-  .top_nav {
-    visibility: hidden;
-  }
-
-  .search_nav {
-    display: flex;
-    position: absolute;
-    top: 0;
-  }
-
-  .left_items_search_nav {
-    visibility: hidden;
-  }
-
-  .search_border {
-    position: relative;
-  }
-
-  .search_nav_icon {
-    position: relative;
-  }
-
-  .hamburguer_border {
-    border-left: 1px solid #eee;
-  }
-
-  .hamburger_menu {
-    visibility: visible;
-  }
-
-  .ad_nav {
-    top: 48px;
-    padding-left: 115px;
-    position: fixed;
-  }
-
-  nav {
-    position: fixed;
-    padding-left: 106px;
-  }
-
-  main {
-    top: 80px;
-  }
-
-  .tnw_logo {
-    visibility: hidden;
-  }
-
-  .main_articles_container {
-    height: 90vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 0;
-    grid-row-gap: 10px;
-  }
-
-  .title_container {
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  .article_category {
-    bottom: 100px;
-  }
-
-  #bigger_article {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-  }
-
-  .gradient_red {
-    visibility: hidden;
-  }
-
-  #small_article1 {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-  }
-
-  #small_article2 {
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
-  }
-
-  .sections_container {
-    width: 100vw;
-  }
-
-  #latest_news {
-    height: 856px;
-  }
-
-  #latest_news_wrapper {
-    flex-flow: column nowrap;
-  }
-
-  .latest_article {
-    width: 100%;
-    max-width: 100%;
-    height: 12.5%;
-    max-height: 88px;
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 5px;
-  }
-
-  .latest_article_img {
-    width: 75px;
-    height: 75px;
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 2;
-  }
-
-  .article_title {
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-  }
-
-  .article_author {
-    margin: 0;
-    margin-right: 10px;
-  }
-
-  .latest_article_info {
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  #latest_funding_rounds {
-    height: 1200px;
-  }
-
-  #latest_funding_rounds_header {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #latest_funding_rounds_wrapper {
-    flex-direction: column;
-    height: 90%;
-  }
-
-  .investment_card {
-    width: 100%;
-    max-width: 100%;
-    height: 265px;
-    max-height: 25%;
-  }
-
-  #articles_categories {
-    width: 100vw;
-    height: 7000px;
-    max-height: 8000px;
-  }
-
-  .articles_category {
-    margin: 0 auto;
-    width: 95%;
-    height: 863px;
-  }
-
-  .most_popular {
-    width: 100%;
-    height: 540px;
-  }
-
-  .most_popular_text {
-    height: 20%;
-  }
-
-  .latest {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .latest_heading {
-    width: 80%;
-  }
-
-  .latest_img {
-    width: 20%;
-    max-width: 96px;
-  }
 }
