@@ -59,6 +59,25 @@
   .latest_article_info {
     height: 10%;
   }
+
+  #latest_funding_rounds {
+    width: 100vw;
+    height: 370px;
+  }
+
+  #latest_funding_rounds_header {
+    margin: 0 auto;
+    width: 98%;
+  }
+
+  .investment_card {
+    width: 33%;
+    max-width: 326px;
+  }
+
+  #latest_investment_card {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
