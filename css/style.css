@@ -635,7 +635,7 @@ main {
 
 #articles_categories {
   width: 100%;
-  height: 2000px;
+  height: 2100px;
   max-height: 2147px;
   flex-flow: row wrap;
 }
@@ -849,6 +849,10 @@ main {
 
 #distract .latest_img {
   background-image: url(../img/category_distract_latest.jpg);
+}
+
+#latest_deals {
+  max-height: 680px;
 }
 
 .latest_deals_heading {

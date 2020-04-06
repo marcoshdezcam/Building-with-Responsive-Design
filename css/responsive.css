@@ -1,15 +1,4 @@
-@media only screen and (min-width: 1024px) {
-
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /*
-    -> ARTICLE_CATEGORIES Article size changes bases on vw
-        -> Increase size of parent container
-    -> LATEST_DEALS image changes based on vw
-        -> increase size of parent container
-  */
-
   header {
     position: fixed;
   }
@@ -78,22 +67,52 @@
   }
 
   #articles_categories {
-    height: 3000px;
+    width: 100vw;
+    height: 2900px;
     max-height: 3000px;
   }
 
   .articles_category {
-    width: 490px;
+    width: 50%;
+    padding: 0 10px;
   }
 
   .most_popular {
-    width: 470px;
+    width: 100%;
     height: 352px;
   }
 
   .latest {
     width: 100%;
     max-width: 470px;
+  }
+
+  #latest_deals {
+    width: 100vw;
+    height: 1000px;
+    margin: 10px 0;
+  }
+
+  .latest_deal {
+    width: 33%;
+    max-width: 325px;
+    height: 33%;
+    max-height: 315px;
+    padding: 10px;
+  }
+
+  .latest_deals_heading {
+    margin: 0 auto;
+  }
+
+  .latest_deal_img {
+    max-width: 306px;
+    max-height: 228px;
+  }
+
+  footer {
+    margin-top: 150px;
+    height: 258px;
   }
 }
 
@@ -274,7 +293,7 @@
   #articles_categories {
     width: 100vw;
     height: 7000px;
-    margin: 100px 0;
+    margin: 50px 0;
     max-height: 8000px;
   }
 

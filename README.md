@@ -1,35 +1,39 @@
 # The Odin Project: Building with Responsive Design
 
 In this project, we build a responsive clone of The Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced.
+
+3 viewports available:
+
+- Small (max-width: 768px)
+- Medium (min-width: 768px and max-width: 1024px)
+- Large (min-width: 1024px)
+
 [Original version](http://thenextweb.com/)
 
-![screenshot](./app_screenshot.png)
+![preview](./img/preview/preview_big.jpg)
 
 ## Built With
 
-- HTML
-- CSS
+- Only HTML & CSS used
 - Flexbox & Grid
 
 ## Live Demo
 
 [Live Demo Link](https://marcoshdezcam.github.io/gh-pages-lives/P6_TNW_Responsive/)
 
-
 ## Authors
-
-👤 **Jorge Cerón**
-
-- Github: [@duducus](https://github.com/duducus)
-- Twitter: [@jorgeceron](https://twitter.com/jorgeceron1)
-- Linkedin: [linkedin](https://mx.linkedin.com/in/jorge-francisco-cer%C3%B3n-gil-343583113)
-
 
 👤 **Marcos Hernández Campos**
 
 - Github: [@marcoshdezcam](https://github.com/marcoshdezcam)
 - Twitter: [@MarcosHCampos](https://twitter.com/MarcosHCampos)
 - Linkedin: [Marcos Hernández](https://linkedin.com/marcos-hernández-56058119a/)
+
+👤 **Jorge Cerón**
+
+- Github: [@duducus](https://github.com/duducus)
+- Twitter: [@jorgeceron](https://twitter.com/jorgeceron1)
+- Linkedin: [linkedin](https://mx.linkedin.com/in/jorge-francisco-cer%C3%B3n-gil-343583113)
 
 ## 🤝 Contributing
 
@@ -42,4 +46,5 @@ Feel free to check the [issues page](issues/).
 Give a ⭐️ if you like this project!
 
 ## 📝 License
+
 This project doesn't require a license.
