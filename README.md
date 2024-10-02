@@ -19,7 +19,7 @@ In this project, we build a responsive clone of The Next Web, a tech-focused mag
 
 ## Live Demo
 
-[Live Demo Link](https://marcoshdezcam.github.io/gh-pages-lives/P6_TNW_Responsive/)
+[Live Demo Link](https://marcoshdezcam.github.io/Building-with-Responsive-Design/)
 
 ## Authors
 
